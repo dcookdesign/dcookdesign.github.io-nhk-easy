@@ -46,11 +46,11 @@ function loadArticle(index) {
     $('ruby rt').hide();
 
     // add the audio source
-    var audio = 'http://www3.nhk.or.jp/news/easy/' + id + '/' + articleData[index].news_easy_voice_uri;
+    var audio = 'https://www3.nhk.or.jp/news/easy/' + id + '/' + articleData[index].news_easy_voice_uri;
     audioFile.setAttribute('src', audio);
 
     // load the content from the article page and place in the article section, reformatting it
-    var url = 'http://www3.nhk.or.jp/news/easy/' + id + '/' + id + '.html';
+    var url = 'https://www3.nhk.or.jp/news/easy/' + id + '/' + id + '.html';
     $('#content').load(url + ' #newsarticle', function (response, status, xhr) {
         $('#content').hide();
         if (status == 'success') {
