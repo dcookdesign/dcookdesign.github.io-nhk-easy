@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="img/icon_large.png">
+    <link rel="icon" href="img/icon_large.png">
+    <title>NHK Easy News</title>
+    <link type="text/css" href="nhkreader.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="nav-escape"></div>
+    <!-- Article List -->
+    <div class="container articlelist">
+        <div class="article-list-header"><b>NHK Easy News</b>
+            <div id="closelist">Close</div>
+        </div>
+        <div class="furigana-buttons">
+            <button class="showfuri"> Show Furigana </button>
+            <button class="hidefuri"> Hide Furigana </button>
+        </div>
+        <div id="articlelist"></div>
+    </div>
+   
+
+        <!-- Header -->
+        <div class="container header full-width">
+            <div class="title" id="title">
+                <h1 class="titleheader"></h1>
+                <p class="datetext"></p>
+
+            </div>
+        </div>
+
+        <!-- Article Content -->
+        <div class="container body">
+            <div class="image"><img id="image" src=""></img>
+            </div>
+            <div class="content" id="content"></div>
+            <div class="nav-buttons">
+                <div id="nav-previous" class="nav-button-enabled"><div class="inner"><img class="left-arrow" src="img/left_arrow.svg"></img></div></div>
+                <div id="nav-next" class="nav-button-enabled"><div class="inner"><img class="right-arrow" src="img/right_arrow.svg"></img></div></div>
+            </div>
+            <div class="legend">
+                <span class="colorL legend-text">Location</span>
+                <span class="colorN legend-text">Name</span>
+                <span class="colorC legend-text">Company</span>
+            </div>
+        </div>
+
+        <!-- Bottom and Footer -->
+        <div class="container">
+            <div class="footer">
+                <p>All news articles and news images are copyright NHK (Japan Broadcasting Corporation) and all rights are reserved.</p>
+                <p>Visit <a href="http://www3.nhk.or.jp/news/easy/">http://www3.nhk.or.jp/news/easy/</a> for more information.</p>
+                <p>5 NHK Easy News Web articles per day are usually provided by NHK from Monday to Friday.</p>
+            </div>
+        </div>
+
+        <!-- nav -->
+        <div class="navcontainer">
+            <div class="navbutton nav-menu-button" id="hamburger">
+                <div class="inner"><img class="navimage" src="img/hamburger.svg"></div>
+            </div>
+            <div class="navbutton nav-play-button">
+                <div class="inner"><img id="audiocontrol" class="navimage" src="img/play.svg"></div>
+            </div>
+
+        </div>
+    
+    <script src="nhkreaderv2.js"></script>
+</body>
+
+</html>

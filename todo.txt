@@ -1,0 +1,43 @@
+NEXT:
+- cache information so that it works offline (with the last loaded data)
+
+
+other:
+- any way to detect if a font is loaded... or wait to load content until font is downloaded?
+
+
+
+Future:
+
+- add in a way to see words that were clicked (maybe just highlight them in purple!)
+
+- add a way to indicate the current news item selected in the menu; will probably need some kind of ID in the divs
+
+- incorporate (read/not read) with some local storage thing?
+
+- it's very fast loading so it would be good if there was some indicator that the page loaded...
+
+- do something about the videos for each article
+
+- do something for the link to the real article
+
+
+** FOR DICTIONARY **
+- can use jisho.org api for dictionary. example: http://jisho.org/api/v1/search/words?keyword=hello
+
+- or can use this site: 
+https://glosbe.com/gapi/translate?from=eng&dest=jpn&format=json&phrase=hello&pretty=true
+
+CORS proxies:
+http://cors-proxy.htmldriven.com
+
+
+
+** Kanji Review: ** 
+1. watch it being drawn
+2. what does it mean?
+3. write it 5 times
+4. next
+
+Later:
+- review them one by one like flash cards

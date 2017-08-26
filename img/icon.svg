@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 111 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-527,-1)">
+        <g transform="matrix(1,0,0,0.777778,0,0)">
+            <rect x="0" y="0" width="800" height="450" style="fill:rgb(76,24,124);"/>
+        </g>
+        <g transform="matrix(1.91406,0,0,1.91406,-365.622,-319.919)">
+            <path d="M798.653,350L369.396,350L584.025,117.311L798.653,350Z" style="fill:rgb(143,63,218);fill-opacity:0.3;"/>
+        </g>
+        <g transform="matrix(1.91406,0,0,1.91406,-365.622,-319.919)">
+            <path d="M484.778,350L396.382,321.98L475.923,71.047L726.856,150.588L663.646,350L484.778,350Z" style="fill:rgb(76,24,124);fill-opacity:0.2;"/>
+        </g>
+        <g transform="matrix(2.5325,0,0,2.5325,-589.655,-537.031)">
+            <path d="M282.281,350L214.928,281.409L359.518,139.427L501.5,284.018L434.306,350L282.281,350Z" style="fill:rgb(143,63,218);fill-opacity:0.2;"/>
+        </g>
+        <g transform="matrix(3.59742,0,0,3.59742,-1167.96,-453.823)">
+            <text x="474.749px" y="146.47px" style="font-family:'EuphemiaUCAS', 'Euphemia UCAS', sans-serif;font-size:12px;fill:white;">NHK</text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,448 @@
+
+
+html {
+    font-size: 16px;
+}
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.1em;
+    line-height: 2.5em;
+    color: #555;
+    font-family: "Noto Sans Japanese";
+    font-weight: 200;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 1.3em;
+    }
+    h1 {
+        font-size: 2.6em;
+        line-height: 3em;
+        
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    body {
+        font-size: 1.1em;
+    }
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 200;
+}
+
+h1 {
+    line-height: 250%
+}
+
+.articlelist {
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+@media only screen and (min-width: 500px) {
+    .articlelist {
+        font-size: 0.8em;
+        line-height: 1.7em;
+    }
+}
+
+p {
+    padding-top: 1em;
+}
+
+.content {
+    padding: 1em 1.4em;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.inner {
+    position: relative;
+    line-height: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.full-width {
+    max-width: 100%
+}
+
+/*------------ hover events ---------- */
+@media (hover:hover) {
+ .listitem:hover {
+    background-color: #eee;
+}
+
+#closelist:hover {
+    background-color: #eee;
+}
+
+.showfuri:hover,
+.hidefuri:hover {
+    background-color: #eee;
+    color: #444;
+}
+.title>h1>ruby:hover {
+    border-bottom: 0.1em solid #eee;
+}
+
+ruby:hover {
+    border-bottom: 0.05em solid #888;
+}
+
+.navbutton:hover,
+.listitem:hover,
+.showfuri:hover,
+.hidefuri:hover,
+#closelist:hover,
+ruby:hover { cursor: pointer; 
+}
+}
+
+
+/* --------------- NAV --------------- */
+
+.navcontainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 500px) {
+    .navcontainer {
+        position: fixed;
+        top: 0;
+        bottom: auto;
+        width: auto;
+    }
+}
+
+.navbutton {
+    background-color: #00aaa0;
+    width: 14vw;
+    height: 14vw;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (min-width: 500px) {
+    .navbutton {
+        width: 2.2em;
+        height: 2.2em;
+    }
+}
+
+.nav-menu-button {
+    float: left;
+    margin-left: 0.7em;
+}
+
+.nav-play-button {
+    float: right;
+    margin-right: 0.7em;
+}
+
+@media only screen and (min-width: 500px) {
+    .nav-play-button {
+        float: left;
+        margin-left: 0.7em;
+    }
+}
+
+.navimage {
+    width: 70%;
+}
+
+.nav-escape {
+    z-index: 2;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    opacity: 0.2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+
+/* --------------- header and title --------------- */
+
+.header {
+    background-color: #4C187C;
+    background-image: url('img/headerback2.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title {    
+    /*center vertically and horizontally: */
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    width: 90vw;
+}
+
+@media only screen and (min-width: 500px) {
+    .title {    
+    /*center vertically and horizontally: */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+}
+}
+
+.titleheader {margin-bottom: 0;}
+.datetext {margin: 0.2em;}
+
+
+/*------------- Image ------------------ */
+
+
+/* images are 640x360 */
+
+.image {
+    position: relative;
+    width: 15em;
+    height: 15em;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 500px) {
+    .image {
+        width: 80vw;
+        height: 80vw;
+    }
+}
+
+.image img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/*----------- Article List ----------------*/
+
+.articlelist {
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    z-index: 3;
+    padding: 0;
+    background-color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    .articlelist {
+        right: auto;
+        max-width: 450px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+.listitem {
+    padding: 0.6em 1.4em;
+    display: list-item;
+    list-style: none;
+    border-top: 0.06em solid #ddd;
+}
+
+
+.listtitle {
+    color: #333;
+    font-size: 0.9em;
+}
+
+.listdate {
+    color: #999;
+    font-size: 0.7em;
+}
+
+.article-list-header {
+    padding: 1.4em;
+}
+
+#closelist {
+    float: right;
+    padding: 3px 5px;
+    font-size: 0.75em;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+
+
+.furigana-buttons {
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+
+.showfuri,
+.hidefuri {
+    color: white;
+    background-color: #00aaa0;
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.3em;
+}
+
+/*---------- nav-buttons on bottom ------*/
+.nav-buttons {
+    text-align: center;
+    margin: 0 auto;
+    width: 160px;
+}
+
+#nav-previous,
+#nav-next {
+    color: white;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0.5em;
+    text-align: center;
+}
+
+#nav-previous {
+    float: left;
+}
+
+#nav-next {
+    float: right;
+}
+
+.nav-button-enabled {
+    background-color: #4C187C;
+}
+
+.nav-button-disabled {
+    background-color: #dddddd;
+}
+
+.left-arrow,
+.right-arrow {
+    width: 25px;
+}
+
+/*----------- footer ----------------*/
+
+.footer {
+    margin: 0 auto;
+    margin-bottom: 10em;
+    text-align: center;
+    font-size: 0.6em;
+    line-height: 1.4em;
+    max-width: 80%;
+}
+
+.footer > a {
+    color: #333;
+}
+
+.legend {
+    text-align: center;
+}
+
+.legend-text {
+    font-size: 0.7em;
+}
+
+
+/*------------ ruby and rt styling ------------ */
+
+ruby {
+    border-bottom: 0.05em solid #ccc;
+}
+
+rt {
+    font-size: 0.5em;
+}
+
+
+
+.title>h1>ruby {
+    border-bottom: 0.1em solid #663098;
+}
+
+
+
+.title>h1>ruby>rt {
+    font-size: 0.4em;
+    color: white;
+}
+
+.colorL,
+.colorN,
+.colorC {
+    color: #ffffff;
+    padding: 0px 0.2em;
+    border-radius: 0.3em;
+}
+
+.colorL {
+    background-color: #FFB85F;
+}
+
+.colorN {
+    background-color: #FF7A5A;
+}
+
+.colorC {
+    background-color: #00aaa0;
+}
+
+span>ruby>rt {
+    color: #555;
+}
