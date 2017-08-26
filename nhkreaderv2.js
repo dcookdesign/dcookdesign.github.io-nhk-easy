@@ -116,7 +116,7 @@ function toggleArticleList() {
 
 function loadJSON() {
     // load the articles from json
-    $.getJSON('http://www3.nhk.or.jp/news/easy/top-list.json', function (data) {
+    $.getJSON('https://www3.nhk.or.jp/news/easy/top-list.json', function (data) {
         articleData = data;
         $.each(data, function (key, value) {
             var title = value.title; // article title
