@@ -4,6 +4,9 @@ var currentIndexNumber;
 var articleListVisible = false;
 
 function loadArticle(index) {
+    if (articleListVisible) {
+        toggleArticleList();
+    }
 
     // this section deals with the bottom nav buttons and styling them depending on the article index
     currentIndexNumber = index;
@@ -109,7 +112,6 @@ function toggleArticleList() {
         $('body').addClass('menu-open');
         articleListVisible = true;
     }
-    console.log(articleListVisible);
 }
 
 /*---------------- Load JSON -------------*/
